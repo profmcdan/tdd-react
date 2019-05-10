@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles.scss";
-import Logo from "../../assets/graphics/fish-logo.jpg";
+import Logo from "../../../assets/graphics/fish-logo.jpg";
 
 const Header = props => (
-  <header>
+  <header className="header-component">
     <div className="wrap">
       <div className="logo">
-        <img src={Logo} alt="logo" />
+        <img className="logo-img" src={Logo} alt="logo" />
       </div>
     </div>
   </header>
