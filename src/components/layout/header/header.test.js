@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Header from "./Header";
+import { findByTestAttr } from "../../../test-utils";
 
 const setUp = (props = {}) => {
-  const component = shallow(<Header {...props} />);
-  return component;
+  return shallow(<Header {...props} />);
 };
 
 describe("Header Component", () => {
@@ -14,12 +14,12 @@ describe("Header Component", () => {
   });
 
   it("Should render without errors", () => {
-    const wrapper = component.find(".header-component");
+    const wrapper = findByTestAttr(component, "header-component");
     expect(wrapper.length).toBe(1);
   });
 
   it("Should render a logo", () => {
-    const logo = component.find(".logo-img");
+    const logo = findByTestAttr(component, "logo-img");
     expect(logo.length).toBe(1);
   });
 });
