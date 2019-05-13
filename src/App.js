@@ -26,7 +26,7 @@ class App extends React.Component {
       emitEvent: this.getPosts
     };
     return (
-      <div className="App">
+      <div className="App" data-test="app-component">
         <Header />
         <section className="main">
           <Headline
