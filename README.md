@@ -1,8 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Redux Testing Template using Jest and Enzyme
 
-## Available Scripts
+The purpose of this project is to demonstrate how to properly implement a test first approch (TDD) to coding with react and redux.
 
-In the project directory, you can run:
+Within this project you will find examples of testing:
+
+1. Connected and unconnected components
+2. Component state and Redux state
+3. Action creators and reducers
+4. Complex action creators that use Redux Thunk and Axios
+5. Action creators called from connected components
+6. In the project directory, you can run:
 
 ### `yarn start`
 
